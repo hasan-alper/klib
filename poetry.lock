@@ -56,7 +56,7 @@ python-versions = ">=3.5"
 dev = ["cloudpickle", "coverage[toml] (>=5.0.2)", "furo", "hypothesis", "mypy (>=0.900,!=0.940)", "pre-commit", "pympler", "pytest (>=4.3.0)", "pytest-mypy-plugins", "sphinx", "sphinx-notfound-page", "zope.interface"]
 docs = ["furo", "sphinx", "sphinx-notfound-page", "zope.interface"]
 tests = ["cloudpickle", "coverage[toml] (>=5.0.2)", "hypothesis", "mypy (>=0.900,!=0.940)", "pympler", "pytest (>=4.3.0)", "pytest-mypy-plugins", "zope.interface"]
-tests_no_zope = ["cloudpickle", "coverage[toml] (>=5.0.2)", "hypothesis", "mypy (>=0.900,!=0.940)", "pympler", "pytest (>=4.3.0)", "pytest-mypy-plugins"]
+tests-no-zope = ["cloudpickle", "coverage[toml] (>=5.0.2)", "hypothesis", "mypy (>=0.900,!=0.940)", "pympler", "pytest (>=4.3.0)", "pytest-mypy-plugins"]
 
 [[package]]
 name = "backcall"
@@ -389,7 +389,7 @@ notebook = ["ipywidgets", "notebook"]
 parallel = ["ipyparallel"]
 qtconsole = ["qtconsole"]
 test = ["pytest (<7.1)", "pytest-asyncio", "testpath"]
-test_extra = ["curio", "matplotlib (!=3.2.0)", "nbformat", "numpy (>=1.19)", "pandas", "pytest (<7.1)", "pytest-asyncio", "testpath", "trio"]
+test-extra = ["curio", "matplotlib (!=3.2.0)", "nbformat", "numpy (>=1.19)", "pandas", "pytest (<7.1)", "pytest-asyncio", "testpath", "trio"]
 
 [[package]]
 name = "isort"
@@ -401,9 +401,9 @@ python-versions = ">=3.6.1,<4.0"
 
 [package.extras]
 colors = ["colorama (>=0.4.3,<0.5.0)"]
-pipfile_deprecated_finder = ["pipreqs", "requirementslib"]
+pipfile-deprecated-finder = ["pipreqs", "requirementslib"]
 plugins = ["setuptools"]
-requirements_deprecated_finder = ["pip-api", "pipreqs"]
+requirements-deprecated-finder = ["pip-api", "pipreqs"]
 
 [[package]]
 name = "jedi"
@@ -980,7 +980,7 @@ py = {version = "*", markers = "implementation_name == \"pypy\""}
 
 [[package]]
 name = "reorder-python-imports"
-version = "3.8.2"
+version = "3.8.5"
 description = "Tool for reordering python imports"
 category = "dev"
 optional = false
@@ -1187,7 +1187,7 @@ testing = ["func-timeout", "jaraco.itertools", "pytest (>=6)", "pytest-black (>=
 [metadata]
 lock-version = "1.1"
 python-versions = ">=3.8.0,<3.12"
-content-hash = "cb3c33c0f56edf183653dd09d8a95f90840d7dcbfa7d5c4cad6dd35f1ba34d61"
+content-hash = "8c199d8d9e75cf6702699d9f52b98dd4ea550c44d74668975d149d0f384f18a8"
 
 [metadata.files]
 appnope = [
@@ -2182,8 +2182,8 @@ pyzmq = [
     {file = "pyzmq-24.0.1.tar.gz", hash = "sha256:216f5d7dbb67166759e59b0479bca82b8acf9bed6015b526b8eb10143fb08e77"},
 ]
 reorder-python-imports = [
-    {file = "reorder_python_imports-3.8.2-py2.py3-none-any.whl", hash = "sha256:c362190fc61f28c9ed3657de0ae702694ce97f90da54617716b23d70b4d4771c"},
-    {file = "reorder_python_imports-3.8.2.tar.gz", hash = "sha256:bc5bd5e01548423fdcf62da767b28d5df6e613b03f9f795438f72b08b75dfba8"},
+    {file = "reorder_python_imports-3.8.5-py2.py3-none-any.whl", hash = "sha256:6c36b84add1a8125479e1de97a21b7797ee6df51530b5340857d65c79d6882ac"},
+    {file = "reorder_python_imports-3.8.5.tar.gz", hash = "sha256:5e018dceb889688eafd41a1b217420f810e0400f5a26c679a08f7f9de956ca3b"},
 ]
 scipy = [
     {file = "scipy-1.9.1-cp310-cp310-macosx_10_9_x86_64.whl", hash = "sha256:c61b4a91a702e8e04aeb0bfc40460e1f17a640977c04dda8757efb0199c75332"},
